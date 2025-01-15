@@ -1,4 +1,0 @@
-Bob 96 80 100 
-Adam 73 90 95
-Michael 87 75 85
-Harry 85 80 75
