@@ -1,0 +1,90 @@
+[
+    {
+        "front": "algorithm",
+        "back": "It contains well-defined, unambiguous steps and must produce a result in a finite time."
+    },
+    {
+        "front": "pseudocode",
+        "back": "A simple way to describe the steps of an algorithm in plain language that looks like code."
+    },
+    {
+        "front": "programming",
+        "back": "The process of writing instructions (code) that a computer follows to perform tasks."
+    },
+    {
+        "front": "programming language",
+        "back": "A set of rules and syntax used to write code that computers can understand."
+    },
+    {
+        "front": "interpreted language",
+        "back": "A programming language where the code is executed directly, line-by-line, without first being compiled."
+    },
+    {
+        "front": "interpreter",
+        "back": "A tool that reads and executes code one line at a time."
+    },
+    {
+        "front": "statement",
+        "back": "A single line of code that tells the computer to perform an action."
+    },
+    {
+        "front": "function",
+        "back": "A reusable block of code that performs a specific task when you call it."
+    },
+    {
+        "front": "arguments",
+        "back": "The values or information you pass into a function to help it work."
+    },
+    {
+        "front": "constants",
+        "back": "Values that, once set, should not change while the program is running."
+    },
+    {
+        "front": "method",
+        "back": "A function that belongs to an object, used to perform actions with that object."
+    },
+    {
+        "front": "comment",
+        "back": "Notes in the code meant for humans to read; these are ignored by the computer."
+    },
+    {
+        "front": "expression",
+        "back": "A combination of values, variables, and operators that computes a new value."
+    },
+    {
+        "front": "floor division",
+        "back": "A division operation using '//' that returns the largest whole number less than or equal to the result."
+    },
+    {
+        "front": "variable",
+        "back": "A name that holds a value which can change as the program runs."
+    },
+    {
+        "front": "assignment statement",
+        "back": "A line of code that assigns a value to a variable using the '=' sign."
+    },
+    {
+        "front": "keywords",
+        "back": "Reserved words in Python that have special meanings and cannot be used as names for your variables or functions."
+    },
+    {
+        "front": "type",
+        "back": "The category of data stored in a variable, such as numbers (int, float) or text (str)."
+    },
+    {
+        "front": "debugging",
+        "back": "The process of finding and fixing errors in your code."
+    },
+    {
+        "front": "syntax error",
+        "back": "An error caused by code that doesn't follow the proper rules or grammar of Python."
+    },
+    {
+        "front": "semantic error",
+        "back": "An error where the code runs without crashing, but doesn't do what you intended because of a logical mistake."
+    },
+    {
+        "front": "runtime error",
+        "back": "An error that occurs while the program is running, often stopping the program unexpectedly."
+    }
+]
