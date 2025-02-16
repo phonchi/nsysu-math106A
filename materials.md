@@ -26,6 +26,11 @@ permalink: /materials/
 * [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
 ## Resources
+### AI tools
+* [ChatGPT](https://chatgpt.com/)
+* [Gemini](https://gemini.google.com/)
+* [Copilot](https://copilot.microsoft.com/)
+
 ### Collections
 * [CS Fundamental resources](https://github.com/tagnja/resources-of-learning/blob/master/%23cs-foundations.md)
 * [Open Source Society University](https://github.com/ossu/computer-science#intro-cs)
