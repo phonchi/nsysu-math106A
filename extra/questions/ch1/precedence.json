@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is the value of the follwing expression?",
+        "code": "16 - 2 * 5 // 3 + 1",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "14",
+                "correct": true,
+                "feedback": "Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1)."
+            },
+            {
+                "answer": "24",
+                "correct": false,
+                "feedback": "Remember that * has precedence over -."
+            },
+            {
+                "answer": "3",
+                "correct": false,
+                "feedback": "Remember that // has precedence over -."
+            },
+            {
+                "answer": "13.667",
+                "correct": false,
+                "feedback": "Remember that // does integer division."
+            }
+        ]
+    }
+]

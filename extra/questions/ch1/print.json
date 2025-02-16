@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What appears in the output window when the following statement executes?",
+        "code": "print(\"Hello!\")",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Nothing is printed. It generates a runtime error.",
+                "correct": false,
+                "feedback": "The syntax is correct!"
+            },
+            {
+                "answer": "\"Hello!\"",
+                "correct": false,
+                "feedback": "The literal in the program includes the quote marks, but the printed representation omits them."
+            },
+            {
+                "answer": "Hello!",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "哈囉!",
+                "correct": false,
+                "feedback": "It will not perfom translation."
+            }
+        ]
+    }
+]

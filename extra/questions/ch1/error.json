@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Which of the following is a semantic error?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Attempting to divide by 0.",
+                "correct": false,
+                "feedback": "A semantic error is an error in logic. In this case the program does not produce the correct output because the problem is not solved correctly. This would be considered a run-time error."
+            },
+            {
+                "answer": "Forgetting the closing parenthesis ) on a print statement.",
+                "correct": false,
+                "feedback": "In this case the program does not produce the correct output because the code can not be processed by the compiler or interpreter. This would be considered a syntax error."
+            },
+            {
+                "answer": "Forgetting to divide by 100 when printing a percentage amount.",
+                "correct": true,
+                "feedback": "This will produce the wrong answer because the programmer implemented the solution incorrectly. This is a semantic error."
+            }
+        ]
+    }
+]
