@@ -1,2 +1,7 @@
 policies:
   -   Please hand in the homework via cyber university https://cu.nsysu.edu.tw/mooc/index.php
+  -   1 day late: Original score × 0.9
+  -   2 days late: Original score × 0.7
+  -   3 days late: Original score × 0.5
+  -   From the 4th day onward: Submission is not accepted, and the assignment will receive a score of 0.
+  -   If you have concerns about your grade, please contact the TA within one week after the grade is released. Late appeals will not be accepted. Example: If the grade is released on January 1st, you must contact the TA by January 8th. Appeals after January 8th will not be processed.
