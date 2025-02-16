@@ -7,15 +7,14 @@ permalink: /materials/
 <!---{% include image.html url="/_images/cover2.jpg" width=175 align="right" %}--->
 
 ## Book
-* [Companion book](https://phonchi.github.io/Computer_Programming/)
 * [Automate the Boring Stuff with Python, 2nd Edition](https://automatetheboringstuff.com/#toc)
 * [Beyond the Basic Stuff with Python](https://inventwithpython.com/beyond/)
 * [Scipy Lecture Notes](https://scipy-lectures.org/)
 
 ## Reference Book
-* [Intro to Python for Computer Science and Data Science](https://deitel.com/intro-to-python-for-computer-science-and-data-science/)
+* [Foundations of Python Programming: Functions First](https://runestone.academy/ns/books/published/foppff/fopp-ff.html)
 * [https://www.books.com.tw/products/0010922575](https://www.books.com.tw/products/0010922575)
-
+* [Companion book](https://phonchi.github.io/Computer_Programming/)
 
 ## MOOC
 * [Automate the Boring Stuff with Python Programming](https://www.udemy.com/course/automate/)
@@ -36,8 +35,8 @@ permalink: /materials/
 * [pythontutor](https://pythontutor.com/)
 
 ### Programming Environment
-* [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 * [Anaconda](https://www.anaconda.com/products/individual)
+* [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 * [Google colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true)
 
 ### Learning Python
