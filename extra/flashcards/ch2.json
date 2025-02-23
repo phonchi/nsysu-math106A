@@ -1,0 +1,102 @@
+[
+    {
+        "front": "Flow control statements",
+        "back": "Instructions that determine the order in which code is executed."
+    },
+    {
+        "front": "boolean expression",
+        "back": "An expression that evaluates to either True or False."
+    },
+    {
+        "front": "Boolean values",
+        "back": "The two truth values in Python: True and False."
+    },
+    {
+        "front": "comparison operators",
+        "back": "Operators like ==, !=, <, >, <=, and >= that compare values."
+    },
+    {
+        "front": "Boolean operators",
+        "back": "Operators such as and, or, and not used to combine or invert boolean expressions."
+    },
+    {
+        "front": "sequential execution",
+        "back": "The process where code runs one statement after the other in order."
+    },
+    {
+        "front": "selection statement",
+        "back": "A statement that lets the program choose between different paths based on conditions (e.g., if statements)."
+    },
+    {
+        "front": "repetition statement",
+        "back": "A loop that repeats a block of code until a condition is met (e.g., for or while loops)."
+    },
+    {
+        "front": "structured programming",
+        "back": "A style of programming that uses blocks, loops, and functions to create clear, logical code."
+    },
+    {
+        "front": "condition",
+        "back": "A boolean expression used to decide which code path to take."
+    },
+    {
+        "front": "clause",
+        "back": "A part of a control structure, such as the condition part of an if-statement."
+    },
+    {
+        "front": "block of code",
+        "back": "A group of statements that are executed together, usually defined by indentation."
+    },
+    {
+        "front": "indentation",
+        "back": "Spaces at the beginning of a line that define blocks of code in Python."
+    },
+    {
+        "front": "control structures",
+        "back": "Constructs like loops and conditional statements that control the flow of execution."
+    },
+    {
+        "front": "if-statement",
+        "back": "A conditional statement that executes code only if a specified condition is True."
+    },
+    {
+        "front": "ternary conditional operator",
+        "back": "A compact way to write an if-else statement that returns one of two values based on a condition."
+    },
+    {
+        "front": "while statement",
+        "back": "A loop that repeats a block of code as long as a condition remains True."
+    },
+    {
+        "front": "Augmented assignments",
+        "back": "Shorthand operators (like +=, -=, *=) that update a variable's value in place."
+    },
+    {
+        "front": "break statement",
+        "back": "A command that immediately exits a loop."
+    },
+    {
+        "front": "infinite loop",
+        "back": "A loop that never stops running on its own unless interrupted."
+    },
+    {
+        "front": "continue statement",
+        "back": "A command that skips the rest of the current loop iteration and moves to the next one."
+    },
+    {
+        "front": "for loop statement",
+        "back": "A loop that iterates over each item in a sequence, executing a block of code for each item."
+    },
+    {
+        "front": "`in`",
+        "back": "A keyword used to check if a value exists in a sequence or to iterate over items in that sequence."
+    },
+    {
+        "front": "sequence type",
+        "back": "Data types that store ordered collections of items, such as lists, tuples, and strings."
+    },
+    {
+        "front": "standard library",
+        "back": "A collection of modules and functions that come with Python to help perform many common tasks."
+    }
+]
