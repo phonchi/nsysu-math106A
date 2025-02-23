@@ -8,7 +8,7 @@ hide_from_announcments: true
 links: 
     - url: /static_files/presentations/02_Flow_control slides.pdf
       name: Ch2_Slides
-    - url: /static_files/presentations/02_Flow_control.ipynb
+    - url: /static_files/presentations/02_Flow_control.html
       name: Ch2_Slides_html
 ---
 **Suggested Readings:**
