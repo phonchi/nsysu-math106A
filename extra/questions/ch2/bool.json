@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Which of the following is a Boolean expression? Select all that apply.",
+        "type": "many_choice",
+        "answer_cols": 5,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true,
+                "feedback": "A boolean expression is an expression that evaluates to a boolean value. True and False itsself are also expression!"
+            },
+            {
+                "answer": "3 == 4",
+                "correct": true,
+                "feedback": "The comparison between two numbers via == results in either True or False."
+            },
+            {
+                "answer": "3 + 4",
+                "correct": false,
+                "feedback": "3+4 evaluates to 7, which is a number, not a Boolean value. So it is an expression but not Boolean expression!"
+            },
+            {
+                "answer": "3 + 4 == 7",
+                "correct": true,
+                "feedback": "3+4 evaluates to 7. 7 == 7 then evaluates to True, which is a Boolean value."
+            },
+            {
+                "answer": "\"False\"",
+                "correct": false,
+                "feedback": "With the double quotes surrounding it, False is interpreted as a string, not a Boolean value. If the quotes had not been included, False alone is in fact a Boolean value and thus a Boolean expression."
+            }
+        ]
+    }
+]

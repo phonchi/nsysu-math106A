@@ -1,0 +1,28 @@
+[
+    {
+        "question": "How many lines of code (statement) can appear in the indented code block below the if and else lines?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " Just one.",
+                "correct": false,
+                "feedback": "Each block may also contain more than one."
+            },
+            {
+                "answer": "Zero or more.",
+                "correct": false,
+                "feedback": "Each block must contain at least one statement."
+            },
+            {
+                "answer": "One or more.",
+                "correct": true,
+                "feedback": "Yes, a block must contain at least one statement and can have many statements."
+            },
+            {
+                "answer": "One or more, and each must contain the same number.",
+                "correct": false,
+                "feedback": "The blocks may contain different numbers of statements!"
+            }
+        ]
+    }
+]
