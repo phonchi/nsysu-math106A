@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What would be the result of running the following code?",
+        "code": "x = 3 * 2 \ny = 1\ndef subtract(z):\n    y = 10\n    return y - z\nprint(subtract(x))",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "4",
+                "correct": true,
+                "feedback": "Correct, the output is right because the subtract function takes in x as the global variable for the z parameter and puts it into the function. The subtract function uses the local variable y for its return."
+            },
+            {
+                "answer": "6",
+                "correct": false,
+                "feedback": "Incorrect, look again at what is being produced in the subtract function."
+            },
+            {
+                "answer": "10",
+                "correct": false,
+                "feedback": "Incorrect, look again at what is being produced in the subtract function."
+            },
+            {
+                "answer": "Code will give an error because there are two different y values.",
+                "correct": false,
+                "feedback": "Incorrect, one y value is in global scope while the other is in local scope."
+            }
+        ]
+    }
+]

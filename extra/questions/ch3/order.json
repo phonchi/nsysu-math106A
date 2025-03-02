@@ -1,0 +1,29 @@
+[
+    {
+        "question": "Which of the following statement about the function is correct?",
+        "code": "def func(a, b=2, c, *args, **kwargs):\n    return a+b",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It will not raise a SyntaxError.",
+                "correct": false,
+                "feedback": "Incorrect. The function definition is problematic because a non-default parameter (c) comes after a default parameter (b)."
+            },
+            {
+                "answer": "It will raise a SyntaxError because non-default parameters cannot follow default parameters.",
+                "correct": true,
+                "feedback": "Correct! In Python, once you provide a default value for a parameter, all subsequent parameters must also have default values, unless they are defined as keyword-only by being placed after *args."
+            },
+            {
+                "answer": "It will raise a SyntaxError because *args must come before default parameters.",
+                "correct": false,
+                "feedback": "Incorrect. *args can follow parameters with default values; the error here is due to the ordering of default and non-default parameters."
+            },
+            {
+                "answer": "It will raise a SyntaxError because **kwargs must come before *args.",
+                "correct": false,
+                "feedback": "Incorrect. In Python, **kwargs must always come last. The error in this function is not related to the positions of *args or **kwargs."
+            }
+        ]
+    }
+]

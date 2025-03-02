@@ -1,0 +1,24 @@
+[
+    {
+        "question": "How many lines will be output by executing this code?",
+        "code": "def hello():\n    print(\"Hello\")\n    print(\"NSYSU\")",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " 0",
+                "correct": true,
+                "feedback": "The code only defines the function. Nothing prints until the function is called."
+            },
+            {
+                "answer": "2",
+                "correct": false,
+                "feedback": "When the function is invoked, it will print two lines, but it has only been defined, not invoked."
+            },
+            {
+                "answer": "3",
+                "correct": false,
+                "feedback": "There are three line, but the code only defines the function. Nothing prints until the function is called."
+            }
+        ]
+    }
+]

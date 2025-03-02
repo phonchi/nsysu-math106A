@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What would be the result of running the following code?",
+        "code": "x = 9\ndef adding():\n    x+=1\n    print(x)\nadding()",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1",
+                "correct": false,
+                "feedback": "Incorrect, pay attention to the local scope in the function."
+            },
+            {
+                "answer": "9",
+                "correct": false,
+                "feedback": "Incorrect, pay attention to the local scope in the function."
+            },
+            {
+                "answer": "10",
+                "correct": false,
+                "feedback": "Incorrect, pay attention to the local scope in the function."
+            },
+            {
+                "answer": "Error, local variable ’x’ is referenced before assignment.",
+                "correct": true,
+                "feedback": "This code gives an error because the local variable ’x’ was referenced in the local scope before it was assigned a value."
+            }
+        ]
+    }
+]

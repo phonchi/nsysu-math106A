@@ -1,0 +1,28 @@
+[
+    {
+        "question": "What is a function in Python?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " A named sequence of statements.",
+                "correct": true,
+                "feedback": "Yes, a function is a named sequence of statements."
+            },
+            {
+                "answer": "Any sequence of statements.",
+                "correct": false,
+                "feedback": "While functions contain sequences of statements, not all sequences of statements are considered functions."
+            },
+            {
+                "answer": "A mathematical expression that calculates a value.",
+                "correct": false,
+                "feedback": "While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values. Consider, for example, the print() function."
+            },
+            {
+                "answer": "A statement of the form x = 5 + 4.",
+                "correct": false,
+                "feedback": "This statement is called an assignment statement not a function"
+            }
+        ]
+    }
+]
