@@ -15201,7 +15201,7 @@ div.jp-OutputPrompt {
 <ol>
 <li><p>Introduction</p>
 </li>
-<li><p>Advance usages of Functions</p>
+<li><p>Advanced usages of Functions</p>
 </li>
 <li><p>Storing your Functions in Modules</p>
 </li>
@@ -15228,7 +15228,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The best way to develop and maintain a large program is to con struct it from smaller pieces. This technique is called <em><strong>divide and conquer</strong></em>.</p>
+<p>The best way to develop and maintain a large program is to construct it from smaller pieces. This technique is called <em><strong>divide and conquer</strong></em>.</p>
 
 </div>
 </div>
@@ -15327,13 +15327,13 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="HLdSOUlbZFHs" data-shufflequestions="False"
+<div id="lyeextrjNmmM" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#HLdSOUlbZFHs {
+#lyeextrjNmmM {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -15546,37 +15546,37 @@ div.jp-OutputPrompt {
 
 
 
-<div id="4e4b82d9-05ec-44e7-b71b-1b105d5393c5" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="c3691f6a-f72b-4810-b7be-90c6faac1ebe" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('4e4b82d9-05ec-44e7-b71b-1b105d5393c5');
-var questionsHLdSOUlbZFHs=[
-    {
-        "question": "What is a function in Python?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": " A named sequence of statements.",
-                "correct": true,
-                "feedback": "Yes, a function is a named sequence of statements."
-            },
-            {
-                "answer": "Any sequence of statements.",
-                "correct": false,
-                "feedback": "While functions contain sequences of statements, not all sequences of statements are considered functions."
-            },
-            {
-                "answer": "A mathematical expression that calculates a value.",
-                "correct": false,
-                "feedback": "While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values. Consider, for example, the print() function."
-            },
-            {
-                "answer": "A statement of the form x = 5 + 4.",
-                "correct": false,
-                "feedback": "This statement is called an assignment statement not a function"
-            }
-        ]
-    }
-]
+var element = document.getElementById('c3691f6a-f72b-4810-b7be-90c6faac1ebe');
+var questionslyeextrjNmmM=[
+    {
+        "question": "What is a function in Python?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " A named sequence of statements.",
+                "correct": true,
+                "feedback": "Yes, a function is a named sequence of statements."
+            },
+            {
+                "answer": "Any sequence of statements.",
+                "correct": false,
+                "feedback": "While functions contain sequences of statements, not all sequences of statements are considered functions."
+            },
+            {
+                "answer": "A mathematical expression that calculates a value.",
+                "correct": false,
+                "feedback": "While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values. Consider, for example, the print() function."
+            },
+            {
+                "answer": "A statement of the form x = 5 + 4.",
+                "correct": false,
+                "feedback": "This statement is called an assignment statement not a function"
+            }
+        ]
+    }
+]
 ;
     // Make a random ID
 function makeid(length) {
@@ -16384,20 +16384,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("HLdSOUlbZFHs")) {
-            show_questions(questionsHLdSOUlbZFHs,  HLdSOUlbZFHs); 
+          if(document.getElementById("lyeextrjNmmM")) {
+            show_questions(questionslyeextrjNmmM,  lyeextrjNmmM); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("HLdSOUlbZFHs");
-        // console.log(document.getElementById("HLdSOUlbZFHs"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/func1.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, lyeextrjNmmM))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionslyeextrjNmmM, lyeextrjNmmM);
+        });
         }
         
 </script>
@@ -16427,12 +16434,24 @@ if (typeof version == 'undefined') {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>When you call the <code>print()</code> or <code>len()</code> function, you pass them values, called <em><strong>arguments</strong></em>, by typing them between the parentheses. You can also define your own functions that accept arguments.</p>
+<p>When you call the <code>print()</code> or <code>len()</code> function, you pass them values, called <em><strong>arguments</strong></em>, by typing them between the parentheses.</p>
 
 </div>
 </div>
 </div>
-</div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment" >
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>You can also define your own functions that accept arguments.</p>
+
+</div>
+</div>
+</div>
+</div></div><div class="fragment" ><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16494,7 +16513,7 @@ Hello, Bob
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div align="center">
-  <img src="Figures/function.png" alt="image.png">
+  <img src="https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/Figures/function.png" alt="image.png">
 </div>
 
 
@@ -16556,7 +16575,7 @@ Hello, Bob
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_37544\2122694447.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_21248\2122694447.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>print<span class="ansi-yellow-intense-fg ansi-bold">(</span>name<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
 <span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;name&#39; is not defined</pre>
@@ -16596,13 +16615,13 @@ Hello, Bob
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="pzTezMDIAHwr" data-shufflequestions="False"
+<div id="gkXoUMakldZU" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#pzTezMDIAHwr {
+#gkXoUMakldZU {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -16815,33 +16834,33 @@ Hello, Bob
 
 
 
-<div id="65fffa40-c0b3-4275-8701-e2782be1e753" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="31d6d59d-d72a-4a60-9a97-dbe93e78f4ba" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('65fffa40-c0b3-4275-8701-e2782be1e753');
-var questionspzTezMDIAHwr=[
-    {
-        "question": "How many lines will be output by executing this code?",
-        "code": "def hello():\n    print(\"Hello\")\n    print(\"NSYSU\")",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": " 0",
-                "correct": true,
-                "feedback": "The code only defines the function. Nothing prints until the function is called."
-            },
-            {
-                "answer": "2",
-                "correct": false,
-                "feedback": "When the function is invoked, it will print two lines, but it has only been defined, not invoked."
-            },
-            {
-                "answer": "3",
-                "correct": false,
-                "feedback": "There are three line, but the code only defines the function. Nothing prints until the function is called."
-            }
-        ]
-    }
-]
+var element = document.getElementById('31d6d59d-d72a-4a60-9a97-dbe93e78f4ba');
+var questionsgkXoUMakldZU=[
+    {
+        "question": "How many lines will be output by executing this code?",
+        "code": "def hello():\n    print(\"Hello\")\n    print(\"NSYSU\")",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": " 0",
+                "correct": true,
+                "feedback": "The code only defines the function. Nothing prints until the function is called."
+            },
+            {
+                "answer": "2",
+                "correct": false,
+                "feedback": "When the function is invoked, it will print two lines, but it has only been defined, not invoked."
+            },
+            {
+                "answer": "3",
+                "correct": false,
+                "feedback": "There are three line, but the code only defines the function. Nothing prints until the function is called."
+            }
+        ]
+    }
+]
 ;
     // Make a random ID
 function makeid(length) {
@@ -17649,20 +17668,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("pzTezMDIAHwr")) {
-            show_questions(questionspzTezMDIAHwr,  pzTezMDIAHwr); 
+          if(document.getElementById("gkXoUMakldZU")) {
+            show_questions(questionsgkXoUMakldZU,  gkXoUMakldZU); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("pzTezMDIAHwr");
-        // console.log(document.getElementById("pzTezMDIAHwr"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/func2.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, gkXoUMakldZU))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionsgkXoUMakldZU, gkXoUMakldZU);
+        });
         }
         
 </script>
@@ -18004,7 +18030,7 @@ print(...)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Ask again later
+<pre>It is certain
 </pre>
 </div>
 </div>
@@ -18044,7 +18070,7 @@ print(...)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The program execution returns to the line at the bottom of the program that was originally called <code>getAnswer()</code>. The returned string is assigned to a variable named <code>fortune</code>, which then gets passed to a <code>print()</code> call and is printed to the screen. The functions that return values are sometimes called <em><strong>fruitful functions</strong></em>.</p>
+<p>After calling the function, the program execution returns to the line at the bottom of the program that was originally called <code>getAnswer()</code>. The returned string is assigned to a variable named <code>fortune</code>, which then gets passed to a <code>print()</code> call and is printed to the screen. The functions that return values are sometimes called <em><strong>fruitful functions</strong></em>.</p>
 
 </div>
 </div>
@@ -18054,7 +18080,7 @@ print(...)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_quiz</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&quot;func3.json&quot;</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
@@ -18078,13 +18104,13 @@ print(...)
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="aXraPnkUmeFA" data-shufflequestions="False"
+<div id="IBIbxBeatsas" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#aXraPnkUmeFA {
+#IBIbxBeatsas {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -18297,38 +18323,38 @@ print(...)
 
 
 
-<div id="4e8bcf10-98b7-4db7-9e53-bf26b7660aad" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="c7c20bac-29e8-426c-a639-84a759eba356" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('4e8bcf10-98b7-4db7-9e53-bf26b7660aad');
-var questionsaXraPnkUmeFA=[
-    {
-        "question": "What is wrong with the following function definition:",
-        "code": "def add_em(x, y, z):\n    return x+y+z\n    print(\"the answer is\", x+y+z)",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "You should never use a print statement in a function definition.",
-                "correct": false,
-                "feedback": "You may include print statements inside your functions."
-            },
-            {
-                "answer": "You should not have any statements in a function after the return statement. Once the function gets to the return statement it will immediately stop executing the function.",
-                "correct": true,
-                "feedback": "This is a very common mistake so be sure to watch out for it when you write your code!"
-            },
-            {
-                "answer": "You must calculate the value of x+y+z before you return it.",
-                "correct": false,
-                "feedback": "Python will automatically calculate the value x+y+z and then return it in the statement as it is written"
-            },
-            {
-                "answer": "A function cannot return a number.",
-                "correct": false,
-                "feedback": "Functions can return any legal data, including (but not limited to) numbers, strings, booleans, etc."
-            }
-        ]
-    }
-]
+var element = document.getElementById('c7c20bac-29e8-426c-a639-84a759eba356');
+var questionsIBIbxBeatsas=[
+    {
+        "question": "What is wrong with the following function definition:",
+        "code": "def add_em(x, y, z):\n    return x+y+z\n    print(\"the answer is\", x+y+z)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "You should never use a print statement in a function definition.",
+                "correct": false,
+                "feedback": "You may include print statements inside your functions."
+            },
+            {
+                "answer": "You should not have any statements in a function after the return statement. Once the function gets to the return statement it will immediately stop executing the function.",
+                "correct": true,
+                "feedback": "This is a very common mistake so be sure to watch out for it when you write your code!"
+            },
+            {
+                "answer": "You must calculate the value of x+y+z before you return it.",
+                "correct": false,
+                "feedback": "Python will automatically calculate the value x+y+z and then return it in the statement as it is written"
+            },
+            {
+                "answer": "A function cannot return a number.",
+                "correct": false,
+                "feedback": "Functions can return any legal data, including (but not limited to) numbers, strings, booleans, etc."
+            }
+        ]
+    }
+]
 ;
     // Make a random ID
 function makeid(length) {
@@ -19136,20 +19162,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("aXraPnkUmeFA")) {
-            show_questions(questionsaXraPnkUmeFA,  aXraPnkUmeFA); 
+          if(document.getElementById("IBIbxBeatsas")) {
+            show_questions(questionsIBIbxBeatsas,  IBIbxBeatsas); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("aXraPnkUmeFA");
-        // console.log(document.getElementById("aXraPnkUmeFA"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/func3.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, IBIbxBeatsas))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionsIBIbxBeatsas, IBIbxBeatsas);
+        });
         }
         
 </script>
@@ -19201,7 +19234,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spam</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span>
@@ -19233,7 +19266,7 @@ None
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -19265,7 +19298,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_quiz</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&quot;func4.json&quot;</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
@@ -19289,13 +19322,13 @@ None
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="VJgLDwwrqZPR" data-shufflequestions="False"
+<div id="mDKwnPdZwbXp" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#VJgLDwwrqZPR {
+#mDKwnPdZwbXp {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -19508,33 +19541,33 @@ None
 
 
 
-<div id="692c190e-ab45-456e-b51d-45ec89c43488" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="bdbff98b-6615-4518-8c78-151221175cce" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('692c190e-ab45-456e-b51d-45ec89c43488');
-var questionsVJgLDwwrqZPR=[
-    {
-        "question": "What is wrong with the following function definition:",
-        "code": "def add_em(x, y, z):\n    print(x+y+z)",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "The value None",
-                "correct": true,
-                "feedback": "We have accidentally used print where we mean return. Therefore, the function will return the value None by default. This mistake is also particularly difficult to find because when you run the function the output looks the same."
-            },
-            {
-                "answer": "The value of x+y+z",
-                "correct": false,
-                "feedback": "Careful! This is a very common mistake. Here we have printed the value x+y+z but we have not returned it. To return a value we MUST use the return keyword."
-            },
-            {
-                "answer": "The string ’x+y+z’",
-                "correct": false,
-                "feedback": "x+y+z calculates a number which represents the sum of the values x, y and z."
-            }
-        ]
-    }
-]
+var element = document.getElementById('bdbff98b-6615-4518-8c78-151221175cce');
+var questionsmDKwnPdZwbXp=[
+    {
+        "question": "What is wrong with the following function definition if we would like to receive the summation from the function",
+        "code": "def add_em(x, y, z):\n    print(x+y+z)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The value None",
+                "correct": true,
+                "feedback": "We have accidentally used print where we mean return. Therefore, the function will return the value None by default. This mistake is also particularly difficult to find because when you run the function the output looks the same."
+            },
+            {
+                "answer": "The value of x+y+z",
+                "correct": false,
+                "feedback": "Careful! This is a very common mistake. Here we have printed the value x+y+z but we have not returned it. To return a value we MUST use the return keyword."
+            },
+            {
+                "answer": "The string ’x+y+z’",
+                "correct": false,
+                "feedback": "x+y+z calculates a number which represents the sum of the values x, y and z."
+            }
+        ]
+    }
+]
 ;
     // Make a random ID
 function makeid(length) {
@@ -20342,20 +20375,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("VJgLDwwrqZPR")) {
-            show_questions(questionsVJgLDwwrqZPR,  VJgLDwwrqZPR); 
+          if(document.getElementById("mDKwnPdZwbXp")) {
+            show_questions(questionsmDKwnPdZwbXp,  mDKwnPdZwbXp); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("VJgLDwwrqZPR");
-        // console.log(document.getElementById("VJgLDwwrqZPR"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/func4.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, mDKwnPdZwbXp))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionsmDKwnPdZwbXp, mDKwnPdZwbXp);
+        });
         }
         
 </script>
@@ -20395,7 +20435,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">describe_pet</span><span class="p">(</span><span class="n">animal_type</span><span class="o">=</span><span class="s1">&#39;Pokemon&#39;</span><span class="p">,</span> <span class="n">pet_name</span><span class="o">=</span><span class="s1">&#39;Harry&#39;</span><span class="p">)</span>
@@ -20469,7 +20509,7 @@ My Pokemon&#39;s name is Harry.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">describe_pet</span><span class="p">(</span><span class="n">pet_name</span><span class="p">,</span> <span class="n">animal_type</span><span class="o">=</span><span class="s1">&#39;dog&#39;</span><span class="p">):</span>
@@ -20552,7 +20592,7 @@ Mydog&#39;s name is Willie.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">describe_pet</span><span class="p">(</span><span class="n">animal_type</span><span class="o">=</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="n">pet_name</span><span class="p">):</span>
@@ -20584,7 +20624,7 @@ Mydog&#39;s name is Willie.
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;C:\Users\adm\AppData\Local\Temp\ipykernel_37544\574269134.py&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;C:\Users\adm\AppData\Local\Temp\ipykernel_21248\574269134.py&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
 <span class="ansi-yellow-intense-fg ansi-bold">    def describe_pet(animal_type=&#39;dog&#39;, pet_name):</span>
 <span class="ansi-white-intense-fg ansi-bold">                                                ^</span>
 <span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> non-default argument follows default argument
@@ -20603,7 +20643,7 @@ Mydog&#39;s name is Willie.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Advance-usage">Advance usage<a class="anchor-link" href="#Advance-usage">&#182;</a></h3>
+<h3 id="Advanced-usage">Advanced usage<a class="anchor-link" href="#Advanced-usage">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -20647,7 +20687,7 @@ Mydog&#39;s name is Willie.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_pizza</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="o">*</span><span class="n">toppings</span><span class="p">):</span>
@@ -20752,7 +20792,7 @@ The size of the pizza is 8 inch with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_profile</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="o">**</span><span class="n">user_info</span><span class="p">):</span>
@@ -20846,7 +20886,7 @@ The size of the pizza is 8 inch with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_quiz</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&quot;order.json&quot;</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
@@ -20870,13 +20910,13 @@ The size of the pizza is 8 inch with the following toppings:
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="OCbnqzQPSgFS" data-shufflequestions="False"
+<div id="wchFKSwNwoZM" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#OCbnqzQPSgFS {
+#wchFKSwNwoZM {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -21089,37 +21129,37 @@ The size of the pizza is 8 inch with the following toppings:
 
 
 
-<div id="addcfaab-eef6-4628-94af-f53cc2faad5f" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="ce05bfae-3970-4841-ad39-54430f02b1d6" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('addcfaab-eef6-4628-94af-f53cc2faad5f');
-var questionsOCbnqzQPSgFS=[
-    {
-        "question": "Which of the following statement about the function is correct?",
-        "code": "def func(a, b=2, c, *args, **kwargs):\n    return a+b",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "It will not raise a SyntaxError.",
-                "correct": false,
-                "feedback": "Incorrect. The function definition is problematic because a non-default parameter (c) comes after a default parameter (b)."
-            },
-            {
-                "answer": "It will raise a SyntaxError because non-default parameters cannot follow default parameters.",
-                "correct": true,
-                "feedback": "Correct! In Python, once you provide a default value for a parameter, all subsequent parameters must also have default values, unless they are defined as keyword-only by being placed after *args."
-            },
-            {
-                "answer": "It will raise a SyntaxError because *args must come before default parameters.",
-                "correct": false,
-                "feedback": "Incorrect. *args can follow parameters with default values; the error here is due to the ordering of default and non-default parameters."
-            },
-            {
-                "answer": "It will raise a SyntaxError because **kwargs must come before *args.",
-                "correct": false,
-                "feedback": "Incorrect. In Python, **kwargs must always come last. The error in this function is not related to the positions of *args or **kwargs."
-            }
-        ]
-    }
+var element = document.getElementById('ce05bfae-3970-4841-ad39-54430f02b1d6');
+var questionswchFKSwNwoZM=[
+    {
+        "question": "Which of the following statement about the function is correct?",
+        "code": "def func(a, b=2, c, *args, **kwargs):\n    return a+b",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It will not raise a SyntaxError.",
+                "correct": false,
+                "feedback": "Incorrect. The function definition is problematic because a non-default parameter (c) comes after a default parameter (b)."
+            },
+            {
+                "answer": "It will raise a SyntaxError because non-default parameters cannot follow default parameters.",
+                "correct": true,
+                "feedback": "Correct! In Python, once you provide a default value for a parameter, all subsequent parameters must also have default values, unless they are defined as keyword-only by being placed after *args."
+            },
+            {
+                "answer": "It will raise a SyntaxError because *args must come before default parameters.",
+                "correct": false,
+                "feedback": "Incorrect. *args can follow parameters with default values; the error here is due to the ordering of default and non-default parameters."
+            },
+            {
+                "answer": "It will raise a SyntaxError because **kwargs must come before *args.",
+                "correct": false,
+                "feedback": "Incorrect. In Python, **kwargs must always come last. The error in this function is not related to the positions of *args or **kwargs."
+            }
+        ]
+    }
 ];
     // Make a random ID
 function makeid(length) {
@@ -21927,20 +21967,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("OCbnqzQPSgFS")) {
-            show_questions(questionsOCbnqzQPSgFS,  OCbnqzQPSgFS); 
+          if(document.getElementById("wchFKSwNwoZM")) {
+            show_questions(questionswchFKSwNwoZM,  wchFKSwNwoZM); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("OCbnqzQPSgFS");
-        // console.log(document.getElementById("OCbnqzQPSgFS"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/order.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, wchFKSwNwoZM))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionswchFKSwNwoZM, wchFKSwNwoZM);
+        });
         }
         
 </script>
@@ -21961,7 +22008,7 @@ if (typeof version == 'undefined') {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <blockquote>
 <h3 id="Exercise-1:-Please-write-a-function-implementing-the-%22guess-the-number%22-game.-The-function-accepts-two-arguments-for-the-maximum-number-of-tries-and-the-maximum-number.-The-function-returns-a-boolean-value-indicating-whether-the-player-guessed-the-number-correctly-or-not.-If-the-player-doesn't-guess-the-number-correctly-after-the-maximum-number-of-tries,-the-function-returns-False;-otherwise,-it-should-return-True.">Exercise 1: Please write a function implementing the "guess the number" game. The function accepts two arguments for the maximum number of tries and the maximum number. The function returns a boolean value indicating whether the player guessed the number correctly or not. If the player doesn't guess the number correctly after the maximum number of tries, the function returns False; otherwise, it should return True.<a class="anchor-link" href="#Exercise-1:-Please-write-a-function-implementing-the-%22guess-the-number%22-game.-The-function-accepts-two-arguments-for-the-maximum-number-of-tries-and-the-maximum-number.-The-function-returns-a-boolean-value-indicating-whether-the-player-guessed-the-number-correctly-or-not.-If-the-player-doesn't-guess-the-number-correctly-after-the-maximum-number-of-tries,-the-function-returns-False;-otherwise,-it-should-return-True.">&#182;</a></h3><center>
-    <img src="Figures/Guess_number.webp" style="width: 20%;">
+    <img src="https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/Figures/Guess_number.webp" style="width: 20%;">
 </center>
 
 </blockquote>
@@ -22134,7 +22181,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
@@ -22164,7 +22211,7 @@ if (typeof version == 'undefined') {
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_37544\4207286030.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_21248\4207286030.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">      3</span> 
 <span class="ansi-green-fg">      4</span> spam<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
 <span class="ansi-green-intense-fg ansi-bold">----&gt; 5</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>print<span class="ansi-yellow-intense-fg ansi-bold">(</span>eggs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
@@ -22194,7 +22241,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_quiz</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&quot;local.json&quot;</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
@@ -22218,13 +22265,13 @@ if (typeof version == 'undefined') {
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="JHAjbkSFqlUb" data-shufflequestions="False"
+<div id="awYlkrtYxQOA" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#JHAjbkSFqlUb {
+#awYlkrtYxQOA {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -22437,37 +22484,37 @@ if (typeof version == 'undefined') {
 
 
 
-<div id="39afe27c-2505-4671-b50c-45e47e24a193" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="e98b55f9-6330-455b-8e4d-3cbb3f039c8d" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('39afe27c-2505-4671-b50c-45e47e24a193');
-var questionsJHAjbkSFqlUb=[
-    {
-        "question": "What would be the result of running the following code?",
-        "code": "x = 3 * 2 \ny = 1\ndef subtract(z):\n    y = 10\n    return y - z\nprint(subtract(x))",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "4",
-                "correct": true,
-                "feedback": "Correct, the output is right because the subtract function takes in x as the global variable for the z parameter and puts it into the function. The subtract function uses the local variable y for its return."
-            },
-            {
-                "answer": "6",
-                "correct": false,
-                "feedback": "Incorrect, look again at what is being produced in the subtract function."
-            },
-            {
-                "answer": "10",
-                "correct": false,
-                "feedback": "Incorrect, look again at what is being produced in the subtract function."
-            },
-            {
-                "answer": "Code will give an error because there are two different y values.",
-                "correct": false,
-                "feedback": "Incorrect, one y value is in global scope while the other is in local scope."
-            }
-        ]
-    }
+var element = document.getElementById('e98b55f9-6330-455b-8e4d-3cbb3f039c8d');
+var questionsawYlkrtYxQOA=[
+    {
+        "question": "What would be the result of running the following code?",
+        "code": "x = 3 * 2 \ny = 1\ndef subtract(z):\n    y = 10\n    return y - z\nprint(subtract(x))",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "4",
+                "correct": true,
+                "feedback": "Correct, the output is right because the subtract function takes in x as the global variable for the z parameter and puts it into the function. The subtract function uses the local variable y for its return."
+            },
+            {
+                "answer": "6",
+                "correct": false,
+                "feedback": "Incorrect, look again at what is being produced in the subtract function."
+            },
+            {
+                "answer": "10",
+                "correct": false,
+                "feedback": "Incorrect, look again at what is being produced in the subtract function."
+            },
+            {
+                "answer": "Code will give an error because there are two different y values.",
+                "correct": false,
+                "feedback": "Incorrect, one y value is in global scope while the other is in local scope."
+            }
+        ]
+    }
 ];
     // Make a random ID
 function makeid(length) {
@@ -23275,20 +23322,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("JHAjbkSFqlUb")) {
-            show_questions(questionsJHAjbkSFqlUb,  JHAjbkSFqlUb); 
+          if(document.getElementById("awYlkrtYxQOA")) {
+            show_questions(questionsawYlkrtYxQOA,  awYlkrtYxQOA); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("JHAjbkSFqlUb");
-        // console.log(document.getElementById("JHAjbkSFqlUb"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/local.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, awYlkrtYxQOA))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionsawYlkrtYxQOA, awYlkrtYxQOA);
+        });
         }
         
 </script>
@@ -23328,7 +23382,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
@@ -23397,7 +23451,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
@@ -23452,7 +23506,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
@@ -23516,7 +23570,7 @@ global
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
@@ -23573,7 +23627,7 @@ spam local
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_quiz</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&quot;global.json&quot;</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
@@ -23597,13 +23651,13 @@ spam local
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div id="FskhWjcySdGr" data-shufflequestions="False"
+<div id="zTqsQJeAJEEP" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="800"
                style="border-radius: 10px; text-align: left"> <style>
-#FskhWjcySdGr {
+#zTqsQJeAJEEP {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -23816,37 +23870,37 @@ spam local
 
 
 
-<div id="7960aaea-1659-4759-8575-bd20daa1ace9" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="0194a12a-71ca-404f-9de1-ea366c83d5be" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('7960aaea-1659-4759-8575-bd20daa1ace9');
-var questionsFskhWjcySdGr=[
-    {
-        "question": "What would be the result of running the following code?",
-        "code": "x = 9\ndef adding():\n    x+=1\n    print(x)\nadding()",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "1",
-                "correct": false,
-                "feedback": "Incorrect, pay attention to the local scope in the function."
-            },
-            {
-                "answer": "9",
-                "correct": false,
-                "feedback": "Incorrect, pay attention to the local scope in the function."
-            },
-            {
-                "answer": "10",
-                "correct": false,
-                "feedback": "Incorrect, pay attention to the local scope in the function."
-            },
-            {
-                "answer": "Error, local variable ’x’ is referenced before assignment.",
-                "correct": true,
-                "feedback": "This code gives an error because the local variable ’x’ was referenced in the local scope before it was assigned a value."
-            }
-        ]
-    }
+var element = document.getElementById('0194a12a-71ca-404f-9de1-ea366c83d5be');
+var questionszTqsQJeAJEEP=[
+    {
+        "question": "What would be the result of running the following code?",
+        "code": "x = 9\ndef adding():\n    x+=1\n    print(x)\nadding()",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1",
+                "correct": false,
+                "feedback": "Incorrect, pay attention to the local scope in the function."
+            },
+            {
+                "answer": "9",
+                "correct": false,
+                "feedback": "Incorrect, pay attention to the local scope in the function."
+            },
+            {
+                "answer": "10",
+                "correct": false,
+                "feedback": "Incorrect, pay attention to the local scope in the function."
+            },
+            {
+                "answer": "Error, local variable ’x’ is referenced before assignment.",
+                "correct": true,
+                "feedback": "This code gives an error because the local variable ’x’ was referenced in the local scope before it was assigned a value."
+            }
+        ]
+    }
 ];
     // Make a random ID
 function makeid(length) {
@@ -24654,20 +24708,27 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("FskhWjcySdGr")) {
-            show_questions(questionsFskhWjcySdGr,  FskhWjcySdGr); 
+          if(document.getElementById("zTqsQJeAJEEP")) {
+            show_questions(questionszTqsQJeAJEEP,  zTqsQJeAJEEP); 
           } else {
              setTimeout(try_show, 200);
           }
         };
     
+        //console.log(element);
         {
-        // console.log(element);
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
 
-        //console.log("FskhWjcySdGr");
-        // console.log(document.getElementById("FskhWjcySdGr"));
+        setTimeout(() => jmscontroller.abort(), 5000);
 
-        try_show();
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/questions/ch3/global.json", {signal})
+        .then(response => response.json())
+        .then(json => show_questions(json, zTqsQJeAJEEP))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        show_questions(questionszTqsQJeAJEEP, zTqsQJeAJEEP);
+        });
         }
         
 </script>
@@ -24742,7 +24803,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -24759,7 +24820,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%writefile</span> pizza.py
@@ -24800,7 +24861,7 @@ if (typeof version == 'undefined') {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pizza</span>
@@ -24892,7 +24953,7 @@ Making a 12-inch pizza with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pizza</span> <span class="kn">import</span> <span class="n">make_pizza</span>
@@ -24972,7 +25033,7 @@ Making a 12-inch pizza with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pizza</span> <span class="kn">import</span> <span class="o">*</span>
@@ -25052,7 +25113,7 @@ Making a 12-inch pizza with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pizza</span> <span class="kn">import</span> <span class="n">make_pizza</span> <span class="k">as</span> <span class="n">mp</span>
@@ -25120,7 +25181,7 @@ Making a 12-inch pizza with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pizza</span> <span class="k">as</span> <span class="nn">p</span>
@@ -25169,7 +25230,7 @@ Making a 12-inch pizza with the following toppings:
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <blockquote>
 <h3 id="Exercise-2:-In-this-word-game,-the-player-is-in-a-land-full-of-dragons.-Some-dragons-are-friendly.-Other-dragons-are-hungry-and-eat-anyone-who-enters-their-cave.-The-player-approaches-two-caves,-one-with-a-friendly-and-the-other-with-a-hungry-dragon,-but-doesn%E2%80%99t-know-which-dragon-is-in-which-cave.-The-player-must-choose-between-the-two.-Please-completet-the-design-of-game-by-calling-the-function-from-the-provided-game-module.">Exercise 2: In this word game, the player is in a land full of dragons. Some dragons are friendly. Other dragons are hungry and eat anyone who enters their cave. The player approaches two caves, one with a friendly and the other with a hungry dragon, but doesn&#8217;t know which dragon is in which cave. The player must choose between the two. Please completet the design of game by calling the function from the provided <code>game</code> module.<a class="anchor-link" href="#Exercise-2:-In-this-word-game,-the-player-is-in-a-land-full-of-dragons.-Some-dragons-are-friendly.-Other-dragons-are-hungry-and-eat-anyone-who-enters-their-cave.-The-player-approaches-two-caves,-one-with-a-friendly-and-the-other-with-a-hungry-dragon,-but-doesn%E2%80%99t-know-which-dragon-is-in-which-cave.-The-player-must-choose-between-the-two.-Please-completet-the-design-of-game-by-calling-the-function-from-the-provided-game-module.">&#182;</a></h3></blockquote>
-<center><img src="Figures/word_game.webp" style="width: 20%;"></center>
+<center><img src="https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/Figures/word_game.webp" style="width: 20%;"></center>
 
 
 </div>
@@ -25228,11 +25289,11 @@ Making a 12-inch pizza with the following toppings:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">jupytercards</span> <span class="kn">import</span> <span class="n">display_flashcards</span>
-<span class="n">fpath</span><span class="o">=</span> <span class="s2">&quot;flashcards/&quot;</span>
+<span class="n">fpath</span><span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/flashcards/&quot;</span>
 <span class="n">display_flashcards</span><span class="p">(</span><span class="n">fpath</span> <span class="o">+</span> <span class="s1">&#39;ch3.json&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -25527,7 +25588,7 @@ Making a 12-inch pizza with the following toppings:
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div style="height:40px"></div><div class="flip-container" id="dkzSGdLaqpeU" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="dkzSGdLaqpeU-next" onclick="window.checkFlip('dkzSGdLaqpeU')"> </div> <div style="height:40px"></div>
+<div style="height:40px"></div><div class="flip-container" id="zlrrcBYOPQfN" tabindex="0" style="outline:none;"></div><div style="height:40px"></div><div class="next" id="zlrrcBYOPQfN-next" onclick="window.checkFlip('zlrrcBYOPQfN')"> </div> <div style="height:40px"></div>
 </div>
 
 </div>
@@ -25539,9 +25600,9 @@ Making a 12-inch pizza with the following toppings:
 
 
 
-<div id="7ff813d0-0897-4e11-bafd-14f8818c946b" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="77d74429-3211-49a0-bf5e-e90b33d5ecde" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('7ff813d0-0897-4e11-bafd-14f8818c946b');
+var element = document.getElementById('77d74429-3211-49a0-bf5e-e90b33d5ecde');
 /*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
@@ -26016,18 +26077,34 @@ function createCards(id, keyControl, grabFocus, shuffleCards, title, subject) {
 
 
         function try_create() {
-          if(document.getElementById("dkzSGdLaqpeU")) {
-            createCards("dkzSGdLaqpeU", "True", "False", "False", "", "");
+          if(document.getElementById("zlrrcBYOPQfN")) {
+            createCards("zlrrcBYOPQfN", "True", "False", "False", "", "");
           } else {
              setTimeout(try_create, 200);
           }
         };
     
-var cardsdkzSGdLaqpeU=[{"front": "divide and conquer", "back": "A strategy that breaks a problem into smaller, manageable subproblems, solves each independently, and then combines the results."}, {"front": "abstraction", "back": "The concept of hiding complex details and showing only the essential features of an object or process."}, {"front": "function", "back": "A reusable block of code designed to perform a specific task when called."}, {"front": "function call", "back": "The act of executing a function by specifying its name along with any required arguments."}, {"front": "argument", "back": "The actual value or variable passed to a function when it is called."}, {"front": "parameter", "back": "A variable in a function definition that receives the value of an argument when the function is called."}, {"front": "positional argument", "back": "An argument that must be passed to a function in the correct order as defined by its parameters."}, {"front": "docstring", "back": "A literal string placed at the beginning of a function or module to describe its purpose and usage."}, {"front": "return statement", "back": "A statement that ends a function's execution and optionally passes back a value to the caller."}, {"front": "fruitful function", "back": "A function that returns a value after execution."}, {"front": "void function", "back": "A function that does not return any value."}, {"front": "keyword argument", "back": "An argument passed to a function by explicitly naming the parameter, allowing arguments to be specified in any order."}, {"front": "default parameter", "back": "A parameter that has a pre-assigned value, which is used if no argument is provided during the function call."}, {"front": "local scope", "back": "The region of a program (typically within a function) where a variable is defined and accessible only within that block."}, {"front": "global scope", "back": "The region of a program where variables are accessible from any part of the code, usually defined outside of functions."}, {"front": "local variable", "back": "A variable defined inside a function that can only be used within that function."}, {"front": "global variable", "back": "A variable defined at the top level of a module that can be accessed from anywhere within that module."}, {"front": "module", "back": "A file containing Python code, such as functions, classes, or variables, that can be imported and reused in other Python programs."}];
-var frontColorsdkzSGdLaqpeU= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
-var backColorsdkzSGdLaqpeU= ["var(--dark-blue-gray)" ];
-var textColorsdkzSGdLaqpeU= ["var(--snow)" ];
-try_create(); 
+var cardszlrrcBYOPQfN=[{"front": "divide and conquer", "back": "A strategy that breaks a problem into smaller, manageable subproblems, solves each independently, and then combines the results."}, {"front": "abstraction", "back": "The concept of hiding complex details and showing only the essential features of an object or process."}, {"front": "function", "back": "A reusable block of code designed to perform a specific task when called."}, {"front": "function call", "back": "The act of executing a function by specifying its name along with any required arguments."}, {"front": "argument", "back": "The actual value or variable passed to a function when it is called."}, {"front": "parameter", "back": "A variable in a function definition that receives the value of an argument when the function is called."}, {"front": "positional argument", "back": "An argument that must be passed to a function in the correct order as defined by its parameters."}, {"front": "docstring", "back": "A literal string placed at the beginning of a function or module to describe its purpose and usage."}, {"front": "return statement", "back": "A statement that ends a function's execution and optionally passes back a value to the caller."}, {"front": "fruitful function", "back": "A function that returns a value after execution."}, {"front": "void function", "back": "A function that does not return any value."}, {"front": "keyword argument", "back": "An argument passed to a function by explicitly naming the parameter, allowing arguments to be specified in any order."}, {"front": "default parameter", "back": "A parameter that has a pre-assigned value, which is used if no argument is provided during the function call."}, {"front": "local scope", "back": "The region of a program (typically within a function) where a variable is defined and accessible only within that block."}, {"front": "global scope", "back": "The region of a program where variables are accessible from any part of the code, usually defined outside of functions."}, {"front": "local variable", "back": "A variable defined inside a function that can only be used within that function."}, {"front": "global variable", "back": "A variable defined at the top level of a module that can be accessed from anywhere within that module."}, {"front": "module", "back": "A file containing Python code, such as functions, classes, or variables, that can be imported and reused in other Python programs."}];
+var frontColorszlrrcBYOPQfN= ["var(--asparagus)", "var(--terra-cotta)", "var(--cyan-process)" ];
+var backColorszlrrcBYOPQfN= ["var(--dark-blue-gray)" ];
+var textColorszlrrcBYOPQfN= ["var(--snow)" ];
+
+
+        {
+        const jmscontroller = new AbortController();
+        const signal = jmscontroller.signal;
+
+        setTimeout(() => jmscontroller.abort(), 5000);
+
+        fetch("https://raw.githubusercontent.com/phonchi/nsysu-math106A/refs/heads/main/extra/flashcards/ch3.json", {signal})
+        .then(response => response.json())
+        .then(json => createCards("zlrrcBYOPQfN", "True", "False", "False", "", ""))
+        .catch(err => {
+        console.log("Fetch error or timeout");
+        try_create(); 
+        });
+        }
+        
 </script>
 </div>
 
