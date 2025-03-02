@@ -9,7 +9,7 @@ links:
     - url: /static_files/presentations/03_Function slides.pdf
       name: CH3 Slides 
     - url: /static_files/presentations/03_Function.html
-      name: Ch2_Slides_html
+      name: Ch3_Slides_html
     - url: /static_files/presentations/game.py
       name: Game module
       
