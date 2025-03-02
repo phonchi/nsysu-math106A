@@ -1,0 +1,74 @@
+[
+    {
+        "front": "divide and conquer",
+        "back": "A strategy that breaks a problem into smaller, manageable subproblems, solves each independently, and then combines the results."
+    },
+    {
+        "front": "abstraction",
+        "back": "The concept of hiding complex details and showing only the essential features of an object or process."
+    },
+    {
+        "front": "function",
+        "back": "A reusable block of code designed to perform a specific task when called."
+    },
+    {
+        "front": "function call",
+        "back": "The act of executing a function by specifying its name along with any required arguments."
+    },
+    {
+        "front": "argument",
+        "back": "The actual value or variable passed to a function when it is called."
+    },
+    {
+        "front": "parameter",
+        "back": "A variable in a function definition that receives the value of an argument when the function is called."
+    },
+    {
+        "front": "positional argument",
+        "back": "An argument that must be passed to a function in the correct order as defined by its parameters."
+    },
+    {
+        "front": "docstring",
+        "back": "A literal string placed at the beginning of a function or module to describe its purpose and usage."
+    },
+    {
+        "front": "return statement",
+        "back": "A statement that ends a function's execution and optionally passes back a value to the caller."
+    },
+    {
+        "front": "fruitful function",
+        "back": "A function that returns a value after execution."
+    },
+    {
+        "front": "void function",
+        "back": "A function that does not return any value."
+    },
+    {
+        "front": "keyword argument",
+        "back": "An argument passed to a function by explicitly naming the parameter, allowing arguments to be specified in any order."
+    },
+    {
+        "front": "default parameter",
+        "back": "A parameter that has a pre-assigned value, which is used if no argument is provided during the function call."
+    },
+    {
+        "front": "local scope",
+        "back": "The region of a program (typically within a function) where a variable is defined and accessible only within that block."
+    },
+    {
+        "front": "global scope",
+        "back": "The region of a program where variables are accessible from any part of the code, usually defined outside of functions."
+    },
+    {
+        "front": "local variable",
+        "back": "A variable defined inside a function that can only be used within that function."
+    },
+    {
+        "front": "global variable",
+        "back": "A variable defined at the top level of a module that can be accessed from anywhere within that module."
+    },
+    {
+        "front": "module",
+        "back": "A file containing Python code, such as functions, classes, or variables, that can be imported and reused in other Python programs."
+    }
+]
