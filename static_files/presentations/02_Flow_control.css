@@ -28,3 +28,12 @@ div.centeredImage {
     width: 50%; /* or whatever percentage or pixel value you want */
 }
 
+
+div.output_subarea pre {
+    color: white !important;
+}
+
+div.output_subarea input[type="text"] {
+    color: black !important;
+    background-color: white !important;
+}
