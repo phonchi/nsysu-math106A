@@ -1,0 +1,30 @@
+[
+    {
+        "front": "string",
+        "back": "A sequence of characters used to represent text data."
+    },
+    {
+        "front": "escape character",
+        "back": "A backslash used to introduce special character sequences in a string."
+    },
+    {
+        "front": "raw string",
+        "back": "A string prefixed with 'r' that treats backslashes as literal characters rather than escape sequences."
+    },
+    {
+        "front": "string interpolation",
+        "back": "The process of inserting variable values or expressions into a string placeholder."
+    },
+    {
+        "front": "format string",
+        "back": "A string containing placeholders that can be replaced with variable values, often using the % symbol."
+    },
+    {
+        "front": "format specifiers",
+        "back": "Special syntax within a format string that defines how a value should be formatted (e.g., .2f for two decimal places)."
+    },
+    {
+        "front": "f-string",
+        "back": "A string literal prefixed with 'f' that allows inline expression evaluation and formatting directly within the string."
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "front": "containers",
+        "back": "Structures that hold or organize multiple values, such as lists, tuples, and dictionaries."
+    },
+    {
+        "front": "methods",
+        "back": "Functions that are associated with an object and can be called on that object."
+    },
+    {
+        "front": "sequence",
+        "back": "An ordered collection of items, where each item can be accessed by its position."
+    },
+    {
+        "front": "list",
+        "back": "A mutable sequence type in Python that can store a collection of items."
+    },
+    {
+        "front": "tuple",
+        "back": "An immutable sequence type in Python that can store a collection of items."
+    },
+    {
+        "front": "elements",
+        "back": "The individual items or values contained within a container like a list or tuple."
+    },
+    {
+        "front": "index",
+        "back": "The numerical position of an element within a sequence, starting from 0."
+    },
+    {
+        "front": "subscript operator",
+        "back": "The square brackets ([]) used to access elements in a container by index."
+    },
+    {
+        "front": "slicing",
+        "back": "A method to retrieve a subset of a sequence by specifying a start, stop, and optionally a step."
+    },
+    {
+        "front": "mutable",
+        "back": "Describes an object that can be changed after it is created, like a list."
+    },
+    {
+        "front": "item assignment",
+        "back": "The process of changing the value of an element within a mutable container using its index."
+    },
+    {
+        "front": "iteration by item",
+        "back": "The process of going through each element in a container one at a time."
+    },
+    {
+        "front": "list comprehension",
+        "back": "A concise way to create lists by applying an expression to each item in a sequence."
+    },
+    {
+        "front": "immutable",
+        "back": "Describes an object that cannot be changed after it is created, like a tuple."
+    },
+    {
+        "front": "reference",
+        "back": "A variable in Python stores a reference, which is the memory address of an object. It points to where the object is stored rather than containing the object itself."
+    },
+    {
+        "front": "modify in-place",
+        "back": "Changing the content of a mutable object without creating a new object."
+    }
+]
