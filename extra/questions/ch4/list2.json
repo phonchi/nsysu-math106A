@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Which of the following correctly uses indexing? Assume that a is a list or string.",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "w = [a]",
+                "correct": false,
+                "feedback": "No, due to the way the code was written it creates a list. This list would have one element which is the value assigned to the variable a."
+            },
+            {
+                "answer": "a[]",
+                "correct": false,
+                "feedback": "Though this tries to use indexing, it does not specify what element should be taken from a."
+            },
+            {
+                "answer": "x = [8]",
+                "correct": false,
+                "feedback": "No, this is an example of creating a list that contains single element 8"
+            },
+            {
+                "answer": "t = a[0]",
+                "correct": true,
+                "feedback": "Yes, this will using indexing to get the value of the first element of a."
+            }
+        ]
+    }
+]

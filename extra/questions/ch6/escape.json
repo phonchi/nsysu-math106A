@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statement?",
+        "code": "print(\"Hello\\nWorld!\\tWelcome to \\\"Python\\\" programming.\\\\\")",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "Hello\nWorld!\tWelcome to \"Python\" programming.\\",
+                "correct": true,
+                "feedback": "Correct! The escape sequence \\n creates a newline, \\t creates a tab, \\\" prints a double quote, and \\\\ prints a single backslash."
+            },
+            {
+                "code": "Hello\\nWorld!\tWelcome to \"Python\" programming.\\",
+                "correct": false,
+                "feedback": "Incorrect. The \\n escape sequence is processed into a newline, not printed literally."
+            },
+            {
+                "code": "Hello\nWorld!\\tWelcome to \"Python\" programming.\\",
+                "correct": false,
+                "feedback": "Incorrect. The \\t escape sequence should create a tab, not be shown as the literal characters \\t."
+            },
+            {
+                "code": "Hello\\nWorld!\\tWelcome to \\\"Python\\\" programming.\\\\",
+                "correct": false,
+                "feedback": "Incorrect. This answer shows the literal string with escape sequences, not the processed output."
+            }
+        ]
+    }
+]

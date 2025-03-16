@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "my_list = [1, 2, 3]\nmy_list.append([4, 5])\nmy_list.extend([6, 7])\nprint(my_list)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "[1, 2, 3, [4, 5], 6, 7]",
+                "correct": true,
+                "feedback": "Correct! The append method adds the entire list [4, 5] as a single element, whereas extend iterates over its argument, adding 6 and 7 individually."
+            },
+            {
+                "answer": "[1, 2, 3, 4, 5, 6, 7]",
+                "correct": false,
+                "feedback": "Incorrect. While extend adds each element individually, append adds its argument as a single item, resulting in a nested list."
+            },
+            {
+                "answer": "[1, 2, 3, [4, 5, 6, 7]]",
+                "correct": false,
+                "feedback": "Incorrect. Only the append method adds a list as a single element, not extend."
+            },
+            {
+                "answer": "[1, 2, 3, 4, 5, [6, 7]]",
+                "correct": false,
+                "feedback": "Incorrect. The extend method does not add its list argument as a single nested element."
+            }
+        ]
+    }
+]

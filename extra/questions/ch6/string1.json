@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "s = \"python rocks\"\nprint(s[2] + s[-4])",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "tr",
+                "correct": false,
+                "feedback": "Almost, t is at postion 2, counting left to right starting from 0; but r is at -5, counting right to left starting from -1."
+            },
+            {
+                "answer": "to",
+                "correct": true,
+                "feedback": "For -4 you count from right to left, starting with -1."
+            },
+            {
+                "answer": "ps",
+                "correct": false,
+                "feedback": "p is at location 0, not 2."
+            },
+            {
+                "answer": "Error, you cannot use the [ ] operator with the + operator.",
+                "correct": false,
+                "feedback": "[ ] operator returns a string that can be concatenated with another string."
+            }
+        ]
+    }
+]

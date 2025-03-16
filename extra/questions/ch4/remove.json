@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "my_list = [10, 20, 30, 40, 20]\ndel my_list[1]\nmy_list.remove(20)\nprint(my_list)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "[10, 30, 40]",
+                "correct": true,
+                "feedback": "Correct! 'del' removes the element at index 1 (20), then 'remove' deletes the first occurrence of 20 from the updated list."
+            },
+            {
+                "answer": "[10, 20, 30, 40]",
+                "correct": false,
+                "feedback": "Incorrect. Both 'del' and 'remove' modify the list, so the original list is not retained."
+            },
+            {
+                "answer": "[10, 30, 40, 20]",
+                "correct": false,
+                "feedback": "Incorrect. Although 'del' removes the first 20, 'remove' then deletes the remaining first occurrence of 20."
+            },
+            {
+                "answer": "[10, 40, 20]",
+                "correct": false,
+                "feedback": "Incorrect. The modifications lead to a different list order than this option."
+            }
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "question": "What is printed by the following statements:",
+        "code": "s = \"ball\"\nr = \"\"\nfor item in s:\n    r = item.upper() + r\nprint(r)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Ball",
+                "correct": false,
+                "feedback": "Each item is converted to upper case before concatenation."
+            },
+            {
+                "answer": "BALL",
+                "correct": false,
+                "feedback": "Each character is converted to upper case but the order is wrong."
+            },
+            {
+                "answer": "LLAB",
+                "correct": true,
+                "feedback": "Yes, the order is reversed due to the order of the concatenation."
+            }
+        ]
+    }
+]

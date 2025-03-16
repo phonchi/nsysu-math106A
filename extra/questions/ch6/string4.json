@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "s1 = \"HelloWorld\"\ns2 = \"Hello123\"\ns3 = \"12345\"\ns4 = \"Hello 123\"\ns5 = \"\"\n\nprint(s1.isalpha(), s2.isalnum(), s3.isdecimal(), s4.isalnum(), s5.isalpha())",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "True, True, True, False, False",
+                "correct": true,
+                "feedback": "Correct! 'HelloWorld' is all letters so isalpha() returns True. 'Hello123' has only letters and numbers so isalnum() returns True. '12345' is all numeric so isdecimal() returns True. 'Hello 123' contains a space so isalnum() returns False. An empty string returns False for isalpha()."
+            },
+            {
+                "code": "True, False, True, False, True",
+                "correct": false,
+                "feedback": "Incorrect. 'Hello123' consists of letters and numbers, so isalnum() should return True, and an empty string should return False."
+            },
+            {
+                "code": "False, True, False, False, False",
+                "correct": false,
+                "feedback": "Incorrect. 'HelloWorld' is all letters, so isalpha() should return True, and '12345' is all numeric so isdecimal() should return True."
+            },
+            {
+                "code": "True, True, True, True, False",
+                "correct": false,
+                "feedback": "Incorrect. 'Hello 123' contains a space, which causes isalnum() to return False."
+            }
+        ]
+    }
+]
