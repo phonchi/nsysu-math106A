@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2025-03-19T15:00:00+3:30
-title: 'Assignment #3'
+title: 'Take home quiz #1'
 attachment: /static_files/assignments/Quiz1.ipynb
 
 due_event: 
