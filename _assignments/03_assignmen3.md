@@ -6,7 +6,7 @@ attachment: /static_files/assignments/Assignment_3.ipynb
 
 due_event: 
     type: due
-    date: 2025-03-27T23:59:00+3:30
+    date: 2025-03-26T23:59:00+3:30
     description: 'Assignment #3 due'
 ---
 This is assignment3.
