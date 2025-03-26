@@ -16,5 +16,5 @@ links:
 - [Notebook](https://github.com/phonchi/nsysu-math106A/blob/master/static_files/presentations/05_Dictionaries_sets.ipynb)
 - [Notes](https://hackmd.io/@phonchi/programming-ch5)
 - [Chapter 5 of ABSP](https://automatetheboringstuff.com/2e/chapter5/)
-
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-8406qmkz38_Wa2voPw96JDP)
 
