@@ -11,7 +11,7 @@ due_event:
 ---
 This is quiz 1.
 
-Please hand in the homework via the assignment center in the cyber university before 03/19 (Wed.) 23:59.
+Please hand in the homework via the assignment center in the cyber university before 04/02 (Wed.) 23:59.
 
 Please hand in your assignment with "ipynb" or "pdf" file.
 
