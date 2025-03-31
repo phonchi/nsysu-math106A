@@ -1,0 +1,92 @@
+[
+    {
+      "name": "Bulbasaur",
+      "HP": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 45
+    },
+	{
+      "name": "Charizard",
+      "HP": 78,
+      "Attack": 84,
+      "Defense": 78,
+      "Sp. Attack": 109,
+      "Sp. Defense": 85,
+      "Speed": 100
+	},
+	{
+      "name": "Squirtle",
+      "HP": 44,
+      "Attack": 48,
+      "Defense": 65,
+      "Sp. Attack": 50,
+      "Sp. Defense": 64,
+      "Speed": 43
+    },
+	{
+      "name": "Pidgeot",
+      "HP": 83,
+      "Attack": 80,
+      "Defense": 75,
+      "Sp. Attack": 70,
+      "Sp. Defense": 70,
+      "Speed": 101
+    },
+	{
+      "name": "Pikachu",
+      "HP": 35,
+      "Attack": 55,
+      "Defense": 40,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 90
+    },
+	{
+      "name": "Gengar",
+      "HP": 60,
+      "Attack": 65,
+      "Defense": 60,
+      "Sp. Attack": 130,
+      "Sp. Defense": 75,
+      "Speed": 110
+	},
+	{
+      "name": "Lapras",
+      "HP": 130,
+      "Attack": 85,
+      "Defense": 80,
+      "Sp. Attack": 85,
+      "Sp. Defense": 95,
+      "Speed": 60
+	},
+	{
+      "name": "Moomins",
+      "HP": 91,
+      "Attack": 134,
+      "Defense": 95,
+      "Sp. Attack": 100,
+      "Sp. Defense": 100,
+      "Speed": 80
+	},
+	{
+      "name": "Latias",
+      "HP": 80,
+      "Attack": 80,
+      "Defense": 90,
+      "Sp. Attack": 110,
+      "Sp. Defense": 130,
+      "Speed": 110
+    },
+    {
+      "name": "Greninja",
+      "HP": 72,
+      "Attack": 95,
+      "Defense": 67,
+      "Sp. Attack": 103,
+      "Sp. Defense": 71,
+      "Speed": 122
+	}
+]
