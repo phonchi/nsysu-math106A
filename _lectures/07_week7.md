@@ -14,3 +14,4 @@ links:
 - [StdGame2](https://github.com/grantjenks/free-python-games)
 - [StdGame Book](https://inventwithpython.com/invent4thed/)
 - [Pygame](https://inventwithpython.com/pygame/)
+- [[Recorded video]](https://www.youtube.com/playlist?list=PLHNZtBNWQ-856S8cErA4gCeCiSBFqW_Ue)
