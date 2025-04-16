@@ -10,6 +10,8 @@ links:
       name: CH6 Slides 
     - url: /static_files/presentations/06_Manipulating_string.html
       name: Ch6_Slides_html
+    - url: /static_files/presentations/Midterm_sol.ipynb
+      name: Reference solution for the midterm
       
 ---
 **Suggested Readings:**
