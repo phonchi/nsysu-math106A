@@ -19,3 +19,4 @@ links:
 - [Notes](https://hackmd.io/@phonchi/programming-ch6)
 - [Chapter 6 of ABSP](https://automatetheboringstuff.com/2e/chapter6/)
 - [Python String Formatting Best Practices](https://realpython.com/python-string-formatting/#toc)
+- [[Recorded video]](https://youtube.com/playlist?list=PLHNZtBNWQ-85WHwV-6fMYxgJAmFi9jvm-&si=P2vHei6DqkyKvl-O)
