@@ -67,6 +67,7 @@ permalink: /materials/
 
 ### Learning English
 * [VoiceTube](https://tw.voicetube.com/)
+* [Pronunciation for keywords used in CS](https://github.com/pjchender/pronounce-correctly-for-taiwanese-programmer?tab=readme-ov-file)
 
 ### Others
 * [Digital tools](https://hackmd.io/@phonchi/digital-tools)
