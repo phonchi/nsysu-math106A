@@ -1,0 +1,62 @@
+[
+  {
+    "front": "Functional-style Interface",
+    "back": "A simple plotting interface in Matplotlib (Pyplot) where you call functions directly (e.g., plt.plot()), and it manages figures and axes for you."
+  },
+  {
+    "front": "Object-oriented Interface",
+    "back": "A plotting interface where you create Figure and Axes objects explicitly and call methods on them for fine-grained control over layout and appearance."
+  },
+  {
+    "front": "Stateful",
+    "back": "Matplotlib’s mode of keeping track of the current figure and axes so that plotting functions apply to them without needing to pass them explicitly."
+  },
+  {
+    "front": "Figure",
+    "back": "The top-level container for all plot elements in Matplotlib—think of it as the window or canvas that holds one or more Axes."
+  },
+  {
+    "front": "Axes",
+    "back": "The individual plotting area within a Figure where data is drawn, including its own x- and y-axis, labels, and ticks."
+  },
+  {
+    "front": "Line Plots",
+    "back": "Graphs that connect data points with lines to show relationships or trends between two numerical variables."
+  },
+  {
+    "front": "Legends",
+    "back": "A box in the plot that explains the symbols, colors, or line styles used to represent different data series."
+  },
+  {
+    "front": "Format String",
+    "back": "A shorthand notation (e.g., 'ro--') used in plotting functions to specify color, marker, and line style in one string."
+  },
+  {
+    "front": "Scatter Plots",
+    "back": "Plots that display individual data points as markers, useful for visualizing relationships or clusters in two variables."
+  },
+  {
+    "front": "Marker",
+    "back": "The symbol (e.g., 'o', '^', 's') used to represent each data point in a plot."
+  },
+  {
+    "front": "Colormaps",
+    "back": "Mappings from numerical data values to colors, often used in heatmaps or gradient-based plots."
+  },
+  {
+    "front": "Density Plots",
+    "back": "Smoothed representations of data distributions using kernel density estimation instead of discrete histograms."
+  },
+  {
+    "front": "Ticks",
+    "back": "The tick marks and labels along an axis that indicate the scale or specific data values."
+  },
+  {
+    "front": "Spines",
+    "back": "The lines denoting the boundaries of the plotting area (the borders around the Axes)."
+  },
+  {
+    "front": "Subplots",
+    "back": "Multiple Axes placed in a grid within one Figure, allowing you to display several plots side by side."
+  }
+]

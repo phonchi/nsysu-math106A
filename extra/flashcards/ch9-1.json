@@ -1,0 +1,34 @@
+[
+  {
+    "front": "Array-Oriented Programming",
+    "back": "Working with whole matrices or arrays of data at once, so you don’t have to write a loop for every item."
+  },
+  {
+    "front": "Functional-Style Programming",
+    "back": "A paradigm that builds programs by composing pure functions—functions that don’t change external state or data."
+  },
+  {
+    "front": "Internal iteration",
+    "back": "Letting a built-in method or function loop over a collection for you instead of writing the `for` loop yourself."
+  },
+  {
+    "front": "Chain Method",
+    "back": "Linking several operations together in one line because each step returns the same object, e.g. `text.strip().lower().split()`."
+  },
+  {
+    "front": "Fancy Indexing",
+    "back": "Selecting multiple items from a list or array using a list of indices or a Boolean mask instead of one index at a time."
+  },
+  {
+    "front": "Copies",
+    "back": "Creating a completely new version of a data structure so you can modify it without affecting the original."
+  },
+  {
+    "front": "Views",
+    "back": "Creating a “window” into the original data so that changes to the view also change the original."
+  },
+  {
+    "front": "Reduction",
+    "back": "Collapsing a collection of values into a single result, like summing all elements or finding the maximum."
+  }
+]

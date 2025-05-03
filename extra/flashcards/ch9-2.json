@@ -1,0 +1,22 @@
+[
+  {
+    "front": "Vectorization",
+    "back": "Performing operations on entire arrays at once instead of element by element, which speeds up computations (e.g., NumPy arrays)."
+  },
+  {
+    "front": "Broadcasting",
+    "back": "Automatically expanding arrays of different shapes to a common shape so element-wise operations can be performed together (used in NumPy)."
+  },
+  {
+    "front": "Universal functions",
+    "back": "NumPy’s built-in functions (ufuncs) that apply operations element-wise on arrays in C for high performance instead of Python loops."
+  },
+  {
+    "front": "Statically typed",
+    "back": "A language characteristic where variable types are checked at compile time and cannot change, requiring explicit type declarations (e.g., C, Java)."
+  },
+  {
+    "front": "Compiled routines",
+    "back": "Functions or routines translated into machine code ahead of execution for faster performance compared to interpreting code line by line."
+  }
+]
