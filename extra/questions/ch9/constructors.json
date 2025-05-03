@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "import numpy as np\na = np.array([1, 2, 3])\nb = np.zeros(3)\nc = np.ones((2, 2))\nd = np.arange(3)\ne = np.linspace(0, 3, 4)\nprint(a)\nprint(b)\nprint(c)\nprint(d)\nprint(e)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "[1 2 3]\n[0. 0. 0.]\n[[1. 1.]\n [1. 1.]]\n[0 1 2]\n[0. 1. 2. 3.]",
+                "correct": true,
+                "feedback": "Correct! np.array constructs an array with the given elements, np.zeros creates floats of zeros, np.ones creates a 2×2 array of ones, np.arange generates integers from 0 to 2, and np.linspace generates four evenly spaced floats from 0 to 3."
+            },
+            {
+                "code": "[1, 2, 3]\n[0. 0. 0.]\n[[1. 1.]\n [1. 1.]]\n[0 1 2]\n[0. 1. 2. 3.]",
+                "correct": false,
+                "feedback": "Incorrect. Arrays are printed without commas, not like Python lists."
+            },
+            {
+                "code": "[1 2 3]\n[0. 0. 0.]\n[[1. 1.]\n [1. 1.]]\n[0 1 2]\n[0. 1. 2.]",
+                "correct": false,
+                "feedback": "Incorrect. The linspace output should contain four values [0. 1. 2. 3.], not three."
+            },
+            {
+                "code": "[1 2 3]\n[0 0 0]\n[[1 1]\n [1 1]]\n[0 1 2]\n[0 1 2 3]",
+                "correct": false,
+                "feedback": "Incorrect. Zeros and ones arrays are float arrays with decimal points, and linspace outputs floats as well."
+            }
+        ]
+    }
+]

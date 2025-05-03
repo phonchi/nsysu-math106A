@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Which of the following are NumPy universal functions (ufuncs)? (Select all that apply)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "np.add",
+                "correct": true,
+                "feedback": "Correct! np.add is a ufunc that performs elementwise addition."
+            },
+            {
+                "answer": "np.dot",
+                "correct": false,
+                "feedback": "Incorrect. np.dot is not a ufunc; it performs dot-product/matrix multiplication."
+            },
+            {
+                "answer": "np.sqrt",
+                "correct": true,
+                "feedback": "Correct! np.sqrt is a ufunc that computes the square root elementwise."
+            },
+            {
+                "answer": "math.sqrt",
+                "correct": false,
+                "feedback": "Incorrect. math.sqrt is a built-in Python function, not a NumPy ufunc."
+            }
+        ]
+    }
+]

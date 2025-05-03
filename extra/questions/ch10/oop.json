@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Which of the following are examples of the object-oriented interface in Matplotlib? (Select all that apply)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "plt.plot(x, y)",
+                "correct": false,
+                "feedback": "plt.plot is part of the functional interface, not the OO interface."
+            },
+            {
+                "answer": "ax.plot(x, y)",
+                "correct": true,
+                "feedback": "Correct! ax.plot uses the Axes object's method, which is the core of the OO interface."
+            },
+            {
+                "answer": "ax.set_xlabel('X axis')",
+                "correct": true,
+                "feedback": "Correct! ax.set_xlabel is a method on the Axes object, demonstrating the OO approach."
+            },
+            {
+                "answer": "plt.xlabel('X axis')",
+                "correct": false,
+                "feedback": "plt.xlabel is part of the functional interface, as it operates on the current axes implicitly."
+            }
+        ]
+    }
+]

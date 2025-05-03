@@ -1,0 +1,29 @@
+[
+    {  
+        "question": "What is printed by the following statements?",
+        "code": "import numpy as np\n\na = np.array([1, 2, 3])\nb = a             # b references the same array as a\nc = a.view()      # c is a view of a\nD = a.copy()      # D is a copy of a\n\nb[0] = 10        # modifies a and b\nc[1] = 20        # modifies a and c\nD[2] = 30        # modifies only D\n\nprint(a)\nprint(b)\nprint(c)\nprint(D)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "[10 20  3]\n[10 20  3]\n[10 20  3]\n[ 1  2 30]",
+                "correct": true,
+                "feedback": "Correct! b and c share the same memory as a, so their modifications appear in a. D is an independent copy, so its change doesn’t affect a."
+            },
+            {
+                "code": "[10  2  3]\n[10  2  3]\n[10 20  3]\n[ 1  2 30]",
+                "correct": false,
+                "feedback": "Incorrect. The view c reflects changes to a (so index 1 is 20), not just the copy D."
+            },
+            {
+                "code": "[10 20  3]\n[10 20  3]\n[ 1  2  3]\n[ 1  2 30]",
+                "correct": false,
+                "feedback": "Incorrect. The view c shares memory with a, so c[1]=20 also updates a."
+            },
+            {
+                "code": "[ 1  2  3]\n[10 20  3]\n[10 20  3]\n[10 20 30]",
+                "correct": false,
+                "feedback": "Incorrect. b immediately modifies a, and c as a view also modifies a; only D remains independent."
+            }
+        ]
+    }
+]

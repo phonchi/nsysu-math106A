@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "import numpy as np\nlist1 = [1, 2, 3]\narr1 = np.array([1, 2, 3])\nprint(list1 * 2)\nprint(arr1 * 2)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "[1, 2, 3, 1, 2, 3]\n[2 4 6]",
+                "correct": true,
+                "feedback": "Correct! Multiplying a list by 2 replicates its contents, while multiplying a NumPy array by 2 performs element-wise multiplication."
+            },
+            {
+                "code": "[2, 4, 6]\n[2 4 6]",
+                "correct": false,
+                "feedback": "Incorrect. A list multiplied by 2 concatenates itself, so you get six elements, not three."
+            },
+            {
+                "code": "[1, 2, 3, 1, 2, 3]\n[2, 4, 6]",
+                "correct": false,
+                "feedback": "Incorrect. Although the list replication is right, the NumPy array prints without commas between elements."
+            },
+            {
+                "code": "[1, 2, 3]\n[2 4 6]",
+                "correct": false,
+                "feedback": "Incorrect. The list is replicated when multiplied by 2, so it produces six elements."
+            }
+        ]
+    }
+]

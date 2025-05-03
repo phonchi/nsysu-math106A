@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "import numpy as np\nlst = [1, 2, 3]\narr = np.array([1, 2, 3])\nprint(lst + lst)\nprint(arr + arr)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "[1, 2, 3, 1, 2, 3]\n[2 4 6]",
+                "correct": true,
+                "feedback": "Correct! Adding two lists concatenates them, while adding two NumPy arrays performs element-wise addition."
+            },
+            {
+                "code": "[2, 4, 6]\n[2 4 6]",
+                "correct": false,
+                "feedback": "Incorrect. List addition does not perform element-wise addition; it concatenates the lists."
+            },
+            {
+                "code": "[1, 2, 3, 1, 2, 3]\n[2, 4, 6]",
+                "correct": false,
+                "feedback": "Incorrect. NumPy arrays print without commas between elements."
+            },
+            {
+                "code": "Error\n[2 4 6]",
+                "correct": false,
+                "feedback": "Incorrect. List addition does not raise an error; it concatenates the lists."
+            }
+        ]
+    }
+]

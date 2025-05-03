@@ -1,0 +1,29 @@
+[
+    {
+        "question": "What is printed by the following statements?",
+        "code": "import numpy as np\n\na = np.array([[1], [2], [3]])  # shape (3,1)\nb = np.array([10, 20, 30])    # shape (3,)\nprint(a + b)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "[[11 21 31]\n [12 22 32]\n [13 23 33]]",
+                "correct": true,
+                "feedback": "Correct! The (3,1) array `a` is broadcast across the (3,) array `b`, producing a (3,3) matrix with element-wise sums."
+            },
+            {
+                "code": "[[11 11 11]\n [22 22 22]\n [33 33 33]]",
+                "correct": false,
+                "feedback": "Incorrect. That would be the result if you mistakenly broadcasted `b` down the rows rather than pairing each element of `b` with each row of `a`."
+            },
+            {
+                "code": "ValueError: operands could not be broadcast together",
+                "correct": false,
+                "feedback": "Incorrect. These shapes are compatible by NumPy’s broadcasting rules: (3,1) and (3,) broadcast to (3,3)."
+            },
+            {
+                "code": "None of the above",
+                "correct": false,
+                "feedback": "Incorrect. The correct output is the 3×3 matrix shown in Option A."
+            }
+        ]
+    }
+]
