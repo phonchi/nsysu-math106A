@@ -3,7 +3,7 @@ type: assignment
 date: 2025-05-14T15:00:00+3:30
 title: 'Take home quiz #2'
 attachment: /static_files/assignments/Quiz2.ipynb
-
+solutions: /static_files/assignments/Quiz2_sol.ipynb
 due_event: 
     type: due
     date: 2025-05-28T23:59:00+3:30
