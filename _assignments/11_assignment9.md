@@ -3,6 +3,7 @@ type: assignment
 date: 2025-05-21T11:20:00+3:30
 title: 'Assignment #9'
 attachment: /static_files/assignments/Assignment_9.ipynb
+solutions: /static_files/assignments/Assignment_9_sol.ipynb
 due_event: 
     type: due
     date: 2025-05-28T23:59:00+3:30
